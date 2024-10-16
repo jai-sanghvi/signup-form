@@ -1,0 +1,128 @@
+:root {
+  --green-color: #596D48;
+}
+
+@font-face {
+  font-family: 'Norse Bold';
+  src: url(Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  background-image: url('bg-img.jpg');
+  height: 100vh;
+  background-size: cover;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20vh 0 20px 0;
+}
+
+.hero * {
+  color: white;
+}
+
+.logo h1 {
+  font-family: 'Norse Bold', sans-serif;
+  font-size: 4.5rem;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+form {
+  padding-block: 100px 0;
+  width: 70%;
+}
+
+form .intro, form .form-controls, form .form-footer {
+  padding-inline: 50px 20%;
+}
+
+form .intro p, form .form-controls p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+form p:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+form .form-controls {
+  margin-block: 50px 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 -2px 10px -2px rgba(0, 0, 0, 0.1);
+  padding-block: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  justify-content: space-between;
+}
+
+form .form-controls p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form .form-controls label {
+  width: 40%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(100, 100, 100)
+  
+}
+
+form button {
+  background-color: var(--green-color);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+}
+
+form input {
+  border: 2px solid #E5E7EB;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+form input:focus {
+  border-color: blue;
+  outline: none;
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="password"]:invalid {
+  border-color: red;
+}
+
+form .form-footer a {
+  color: var(--green-color);
+  text-decoration: none;
+  font-weight: 600;
+}
